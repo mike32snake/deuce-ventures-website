@@ -37,7 +37,7 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`font-sans text-sm font-medium transition-colors duration-200 hover:text-deuce-purple ${
+                className={`font-sans text-sm font-medium transition-all duration-300 ease-out hover:text-deuce-purple ${
                   isActive(item.path)
                     ? 'text-deuce-purple border-b-2 border-deuce-purple'
                     : 'text-deuce-dark'
@@ -101,7 +101,7 @@ const Navbar = () => {
               key={item.path}
               to={item.path}
               onClick={() => setIsOpen(false)}
-              className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+              className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ease-out ${
                 isActive(item.path)
                   ? 'text-deuce-purple bg-deuce-light'
                   : 'text-deuce-dark hover:text-deuce-purple hover:bg-deuce-light'
